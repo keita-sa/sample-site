@@ -39,7 +39,7 @@ func main() {
 	http.HandleFunc("/", handler(day))
 
 	// サーバーを立ち上げる
-	port := "5000"
+	port := "8000"
 	log.Println("Listening...")
 	log.Println("Go to http://localhost:" + port)
 	http.ListenAndServe(":"+port, nil)
